@@ -1,0 +1,93 @@
+#container {
+    border: 1px solid #352aff;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: auto;
+    overflow: auto;
+    border-radius: 5px;
+}
+#header {
+    border-bottom: 1px solid #352aff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+#questionText {
+    margin: 20px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+#choices {
+    margin-left: 40px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.choiceInput {
+    height: 40px;
+}
+.choiceInput > label {
+    font-size: 20px;
+    padding: 4px;
+    vertical-align: top;
+}
+.choiceInput > input {
+    height: 20px;
+    width: 20px;
+}
+#footer {
+    border-top: 1px solid #352aff;
+    padding: 20px;
+    text-align: right;
+}
+#footer > #button {
+    width: 150px;
+    height: 50px;
+    background: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+#button:hover {
+    background: #3cb0fd;
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+    cursor: pointer;
+    outline-style: none;
+}
+#button:active, #button:focus{
+    outline-style: none;
+}
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+.warning {
+    color: #ff341d;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    display: inline-block;
+}
+#timer {
+    float:left;
+    padding: 15px;
+}
